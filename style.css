@@ -10,16 +10,20 @@ height: 100%;
 
 .banner-text{
     position: relative;
-    top: -75%;
+    top: -5%;
     left: 50%;
     transform: translate(-50%,50%);
     text-shadow: 0 0 10px #FF0000, 0 0 5px #0000FF;
 }
 
+.contact{
+    opacity: 0.9;
+}
+
 .block{
     position: relative;
-    margin: 10% auto 0;
-    top: 15%;
+    margin: 6% auto 0;
+    top: -5%;
     width: 50%;
     height: 400px;
     background-image: url("SNP_0081.JPG");
