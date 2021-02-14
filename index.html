@@ -24,45 +24,47 @@
     </div>
     <div class="image glow"></div>
 
-    <div class="contact">
-        <a href="https://www.instagram.com/ijame.srw" >
-            <img alt="Surawit | Instagram" width="50px" src="./assets/instagram.gif" />
-        </a>
-        <a href="https://www.facebook.com/IJameSRW">
-            <img alt="Surawit | Facebook" width="50px" src="./assets/facebook.gif" />
-        </a>
-        <a href="https://github.com/j4m3ee">
-            <img alt="Surawit | Github" width="50px" src="./assets/github.gif" />
-        </a>
-        <a href="https://twitter.com/SYosaeng">
-            <img alt="Surawit | Twitter" width="45px" src="./assets/twitter.gif" />
-        </a>
-        <a href="https://www.youtube.com/channel/UCt_m-i4rhpKJlUNSW0zF80Q">
-            <img alt="Surawit | Youtube" width="55px" src="./assets/youtube.gif" />
-        </a>
-        
+    <div class="underbox">
+        <div class="contact">
+            <a href="https://www.instagram.com/ijame.srw">
+                <img class="item-m" alt="Surawit | Instagram" src="./assets/instagram.gif" />
+            </a>
+            <a href="https://www.facebook.com/IJameSRW">
+                <img class="item-m" alt="Surawit | Facebook" src="./assets/facebook.gif" />
+            </a>
+            <a href="https://github.com/j4m3ee">
+                <img class="item-m" alt="Surawit | Github" src="./assets/github.gif" />
+            </a>
+            <a href="https://twitter.com/SYosaeng">
+                <img class="item-s" alt="Surawit | Twitter" src="./assets/twitter.gif" />
+            </a>
+            <a href="https://www.youtube.com/channel/UCt_m-i4rhpKJlUNSW0zF80Q">
+                <img class="item-l" alt="Surawit | Youtube" src="./assets/youtube.gif" />
+            </a>
+        </div>
 
+        <div class="footer"><a>Copyright © SnapM 2000</a></div>
     </div>
 
-    <div><a class="footer">Copyright © SnapM 2000</a></div>
+
 
     <script>
         var checkbox = document.querySelector('input[name=theme]')
-        checkbox.addEventListener('change',function(){
-            if(this.checked){
+        checkbox.addEventListener('change', function () {
+            if (this.checked) {
                 trans()
-                document.documentElement.setAttribute('data-theme','light')
-            }else{
+                document.documentElement.setAttribute('data-theme', 'light')
+            } else {
                 trans()
-                document.documentElement.setAttribute('data-theme','dark')
+                document.documentElement.setAttribute('data-theme', 'dark')
             }
         })
 
         let trans = () => {
             document.documentElement.classList.add('transition')
-            window.setTimeout(()=>{
+            window.setTimeout(() => {
                 document.documentElement.classList.remove('transition')
-            },1000)
+            }, 1000)
         }
     </script>
 
