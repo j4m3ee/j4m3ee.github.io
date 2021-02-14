@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -9,6 +9,13 @@
 
 <body>
     <!-- <div class="banner-img"></div> -->
+    <div class="theme">
+        <input type="checkbox" class="checkbox" id="checkbox" name="theme">
+        <label for="checkbox" class="label">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+        </label>
+    </div>
     <div class="banner-text">
         <h1>Hello I'm Snap!</h1>
         <h2>
@@ -37,9 +44,27 @@
 
     </div>
 
-    <div><a class="footer">Copyright © Tecivity 2020</a></div>
+    <div><a class="footer">Copyright © SnapM 2000</a></div>
 
+    <script>
+        var checkbox = document.querySelector('input[name=theme]')
+        checkbox.addEventListener('change',function(){
+            if(this.checked){
+                trans()
+                document.documentElement.setAttribute('data-theme','light')
+            }else{
+                trans()
+                document.documentElement.setAttribute('data-theme','dark')
+            }
+        })
 
+        let trans = () => {
+            document.documentElement.classList.add('transition')
+            window.setTimeout(()=>{
+                document.documentElement.classList.remove('transition')
+            },1000)
+        }
+    </script>
 
 
 </body>
