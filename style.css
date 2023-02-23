@@ -54,10 +54,10 @@ body{
     background-image: url('./assets/SNAP-7.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center 10%;
     margin: 3% auto;
     width: 400px;
-    height: 600px;
+    height: 400px;
     transition: 0.5s;
 }
 
